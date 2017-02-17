@@ -1,16 +1,19 @@
-# restful-booker-platform
-A platform of multiple node based web services for training others on how to explore and test web service platforms
+Exercise by Jon Parker
+Comments from attempting this exercise.
 
-# Requirements
-- Docker 1.12.0
-- Docker Compose 1.8.0
+Summary: I am not familiar with Docker but I installed it and got the website running locally but there were some issues. These may be bugs or an issue with my environment or config. The same issues occurred on Chrome, Firefox, IE and Edge browsers. I would need more time to research why these things are not working if they are not bugs. I have written some tests in Java using Eclipse Mars IDE. Please see the test code in the repo. ssThese log the admin user in, add a hotel, add several hotels, delete a hotel (not working due to issue with delete button).
 
-# Installation
-1. Clone the repo
-2. Navigate into the restful-booker-platform root folder
-3. Run ```docker-compose build``` to generate images
-4. Run ```docker-compose up``` to start the platform
-5. Navigate to http://localhost:3003 to access the site (Login is admin/password)
+1/ Though I was able to add Hotel records, I found that the Delete button is visible, when logged in as the Admin user, but is set as 'Hidden' when looking at the HTML and did it did not work, i.e. I could not delete a Hotel record. 
 
-## Logging
-Logging is available for each of the services for you to view when a service has been called. Once you have discovered the IP and Port for a specific service, simply update the port number from 3xxx to 9xxx and you will be presented with a live feed of the services log.
+2/ If you click on an Hotel record it does go to a new page, i.e. I assume this page would show the detail of the Hotel and allow bookings to be added, but it just shows a 'Not Found' message in my environment.
+
+3/ The search functions seems to work well on brief checking.
+
+4/ I could not check the add/delete booking functionality as it did not work. 
+
+Exploratory Testing
+Due to the issues mentioned above there is not much to explore. But I would have perhaps tried:
+- to check that all appropriate data fields are editable
+- that edits are commited to the database and reflected after logoff/logon
+- check basic functionality works on several different Operating system and browsers
+- check field validations
