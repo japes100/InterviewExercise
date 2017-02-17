@@ -1,0 +1,22 @@
+Exercise by Jon Parker
+Comments from attempting this exercise.
+
+Summary: I am not familiar with Docker but I installed it and got the website running locally but there were some issues. These may be bugs or an issue with my environment or config. The same issues occurred on Chrome, Firefox, IE and Edge browsers. I would need more time to research why these things are not working if they are not bugs. I have written some tests in Java using Eclipse Mars IDE. Please see the test code in the repo. ssThese log the admin user in, add a hotel, add several hotels, delete a hotel (not working due to issue with delete button).
+
+1/ Though I was able to add Hotel records, I found that the Delete button is visible, when logged in as the Admin user, but is set as 'Hidden' when looking at the HTML and did it did not work, i.e. I could not delete a Hotel record. 
+
+2/ If you click on an Hotel record it does go to a new page, i.e. I assume this page would show the detail of the Hotel and allow bookings to be added, but it just shows a 'Not Found' message in my environment.
+
+3/ The search functions seems to work well on brief checking.
+
+4/ I could not check the add/delete booking functionality as it did not work. 
+
+Exploratory Testing
+Due to the issues mentioned above there is not much to explore. But I would have perhaps tried:
+- to check that all appropriate data fields are editable
+- that edits are commited to the database and reflected after logoff/logon
+- check basic functionality works on several different Operating system and browsers
+- check field validations
+
+ 
+
